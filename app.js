@@ -10,7 +10,9 @@ function moveHands() {
       "-webkit-transform:rotate(" + m + "deg);";
     document.getElementById("hours").style.cssText =
       "-webkit-transform:rotate(" + h + "deg);";
-
+     
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
     setTimeout(moveHands, 1000); // calling the function every second
   }
 }
