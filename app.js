@@ -13,8 +13,25 @@ function moveHands() {
      
     var dt = new Date();
     document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+   
     setTimeout(moveHands, 1000); // calling the function every second
   }
+}
+
+document.body.onkeyup = function(e) {
+  if (e.keyCode == 13)
+  {
+    newItem();
+  }    
+};
+
+function newItem() {
+  var item = document.getElementById("input").value;
+  var ul = document.getElementById("list");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode("- " + item));
+  ul.appendChild(li);
+  document.getElementById("input").value = "";
 }
 
 window.onload = moveHands; // making sure the function starts on load of webpage
