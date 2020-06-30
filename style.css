@@ -6,12 +6,19 @@
 
 body {
   background-color: #b4b4b4;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  border: 6px solid rgb(97, 159, 240);
+  padding: 10px;
+  box-shadow: 12px 12px lightblue;
+  max-width: 25em;
+  margin: auto;
 }
 
 .clock {
   height: 500px;
   width: 500px;
-  background-color :rgb(157, 200, 255);
+  background-color :rgb(62, 130, 219);
   border-radius: 100%;
   border: 3px solid #aaaaaa;
   margin: auto;
